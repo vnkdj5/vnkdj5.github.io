@@ -5,14 +5,18 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=vnkdj5" alt="vnkdj5" /></a> </p>
 
-### Blogs posts
-<!-- BLOG-POST-LIST:START -->
-<!-- BLOG-POST-LIST:END -->
+- 🌱 I’m currently learning **Dropwizard**
+
+- 📝 I regulary write articles on [https://www.way2techin.com/](https://www.way2techin.com/)
+
+- 📫 How to reach me **vnkdj5@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/vaibhav-k" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="vaibhav-k" height="30" width="40" /></a>
+<a href="https://codesandbox.com/vaibhav kumbhar" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg" alt="vaibhav kumbhar" height="30" width="40" /></a>
 <a href="https://fb.com/vnkdj5" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="vnkdj5" height="30" width="40" /></a>
+<a href="https://instagram.com/_vaibhav_k" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="_vaibhav_k" height="30" width="40" /></a>
 <a href="/https://www.way2techin.com/feeds/posts/default" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg" alt="https://www.way2techin.com/feeds/posts/default" height="30" width="40" /></a>
 </p>
 
