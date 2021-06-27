@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=vnkdj5" alt="vnkdj5" /></a> </p>
 
-- 🌱 I’m currently improvinf my **Problem Solving skills**.
+- 🌱 I’m currently improving my **Problem Solving skills**.
 
 - 📝 I regulary write articles on [https://www.way2techin.com/](https://www.way2techin.com/)
 
