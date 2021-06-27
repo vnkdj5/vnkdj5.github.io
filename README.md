@@ -13,22 +13,25 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/vaibhav-k" target="blank"><i class="devicon-android-plain-wordmark colored"></i>
+<h3 align="left" >Connect with me:</h3>
+<p align="left" style="font-size: 32px;">
+<a href="https://linkedin.com/in/vaibhav-k" target="blank"><i class="devicon-linkedin-plain colored"></i>
 </a>
-<a href="https://codesandbox.com/vaibhav kumbhar" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg" alt="vaibhav kumbhar" height="30" width="40" /></a>
-<a href="https://fb.com/vnkdj5" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="vnkdj5" height="30" width="40" /></a>
+<a href="https://github.com/vnkdj5" target="blank">
+<i class="devicon-github-original colored"></i>
+</a>
+<a href="https://facebook.com/vnkdj5" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="vnkdj5" height="30" width="40" /></a>
 <a href="https://instagram.com/_vaibhav_k" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="_vaibhav_k" height="30" width="40" /></a>
-<a href="/https://www.way2techin.com/feeds/posts/default" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg" alt="https://www.way2techin.com/feeds/posts/default" height="30" width="40" /></a>
+<a href="https://www.way2techin.com/feeds/posts/default" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg" alt="https://www.way2techin.com/feeds/posts/default" height="30" width="40" /></a>
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.android.com" target="_blank"> <img src="https://devicons.github.io/devicon/devicon.git/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a>
+<h3 align="left" style="font-size: 32px;">Languages and Tools:</h3>
+<p align="left"> <a href="https://developer.android.com" target="_blank"> <i class="devicon-android-plain-wordmark colored"></i>
+ </a>
 <a href="https://angular.io" target="_blank"> <i class="devicon-angularjs-plain colored"></i>
 </a> 
-  <a href="https://azure.microsoft.com/en-in/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> 
- </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
+ <a href="https://azure.microsoft.com/en-in/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> 
+ <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
  <a href="https://www.java.com" target="_blank"><i class="devicon-java-plain-wordmark colored"></i>
  </a>
  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="devicon-javascript-plain colored"></i>
