@@ -25,8 +25,9 @@
 <a href="https://www.way2techin.com/feeds/posts/default" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg" alt="https://www.way2techin.com/feeds/posts/default" height="30" width="40" /></a>
 </p>
 
-<h3 align="left" style="font-size: 32px;">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.android.com" target="_blank"> <i class="devicon-android-plain-wordmark colored"></i>
+<h3 align="left" >Languages and Tools:</h3>
+<p align="left" style="font-size: 32px;">
+ <a href="https://developer.android.com" target="_blank"> <i class="devicon-android-plain-wordmark colored"></i>
  </a>
 <a href="https://angular.io" target="_blank"> <i class="devicon-angularjs-plain colored"></i>
 </a> 
@@ -43,7 +44,9 @@
  </a> <a href="https://spring.io/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40"/> </a>
  <i class="devicon-microsoftsqlserver-plain-wordmark colored"></i>
 
- <a href="https://www.sqlite.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a> </p>
+ <a href="https://www.sqlite.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a>
+
+</p>
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=vnkdj5&show_icons=true&locale=en&layout=compact" alt="vnkdj5" /></p>
 
