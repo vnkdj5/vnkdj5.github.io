@@ -20,7 +20,8 @@
 <a href="https://github.com/vnkdj5" target="blank">
 <i class="devicon-github-original colored"></i>
 </a>
-<a href="https://facebook.com/vnkdj5" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="vnkdj5" height="30" width="40" /></a>
+<a href="https://facebook.com/vnkdj5" target="blank"><i class="devicon-facebook-plain colored"></i>
+</a>
 <a href="https://instagram.com/_vaibhav_k" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="_vaibhav_k" height="30" width="40" /></a>
 <a href="https://www.way2techin.com/feeds/posts/default" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/rss.svg" alt="https://www.way2techin.com/feeds/posts/default" height="30" width="40" /></a>
 </p>
@@ -32,7 +33,8 @@
 <a href="https://angular.io" target="_blank"> <i class="devicon-angularjs-plain colored"></i>
 </a> 
  <a href="https://azure.microsoft.com/en-in/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> 
- <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
+ <a href="https://git-scm.com/" target="_blank"> <i class="devicon-git-plain-wordmark colored"></i>
+ </a>
  <a href="https://www.java.com" target="_blank"><i class="devicon-java-plain-wordmark colored"></i>
  </a>
  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="devicon-javascript-plain colored"></i>
@@ -41,7 +43,8 @@
 </a> <a href="https://www.mysql.com/" target="_blank"><i class="devicon-mysql-plain-wordmark colored"></i>
 </a> 
 <a href="https://reactjs.org/" target="_blank"> <i class="devicon-react-original-wordmark colored"></i>
- </a> <a href="https://spring.io/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40"/> </a>
+ </a> <a href="https://spring.io/" target="_blank"> <i class="devicon-spring-plain-wordmark colored"></i>
+ </a>
  <i class="devicon-microsoftsqlserver-plain-wordmark colored"></i>
 
  <a href="https://www.sqlite.org/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a>
