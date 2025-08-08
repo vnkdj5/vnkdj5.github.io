@@ -31,6 +31,33 @@ jobs:
       - name: List build output
         run: ls -la dist/
         
+      - name: List assets directory
+        run: ls -la dist/assets/
+        
+      - name: List js directory
+        run: ls -la dist/assets/js/
+        
+      - name: List css directory
+        run: ls -la dist/assets/css/
+        
+      - name: Check for main.tsx files
+        run: find dist -name "main.tsx" -type f
+        
+      - name: Check for any .tsx files
+        run: find dist -name "*.tsx" -type f
+        
+      - name: Check for any .ts files
+        run: find dist -name "*.ts" -type f
+        
+      - name: Show dist/index.html content
+        run: cat dist/index.html
+        
+      - name: Show dist/404.html content
+        run: cat dist/404.html
+        
+      - name: Check file permissions
+        run: ls -la dist/ && ls -la dist/assets/ && ls -la dist/assets/js/
+        
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
