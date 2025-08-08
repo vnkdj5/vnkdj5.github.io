@@ -1,0 +1,103 @@
+{
+  "name": "Vaibhav Kumbhar",
+  "title": "Senior Developer",
+  "tagline": "Versatile and driven software developer with a passion for solving business challenges through innovative programming solutions.",
+  "location": "Pune, India",
+  "email": "01vaibhavkumbhar@gmail.com",
+  "phone": "+91-9890811301",
+  "links": {
+    "linkedin": "https://linkedin.com/in/vaibhav-k",
+    "github": "https://github.com/vnkdj5"
+  },
+  "work_experience": [
+    {
+      "role": "Software Engineer (L2)",
+      "company": "Securly",
+      "duration": "05/2025 - Present",
+      "achievements": [
+        "Working on Securly Filter as a Golang developer.",
+        "Contributed to multiple components including request broker, web filtering, Chrome extensions, and reporting of activities."
+      ]
+    },
+    {
+      "role": "Senior Developer",
+      "company": "Delhivery",
+      "duration": "09/2021 - 05/2025",
+      "achievements": [
+        "Lead developer for Authentication and Authorization services with SAML, OIDC, and passwordless logins while keeping PII data secure.",
+        "Built a centralized, low-latency authorizer supporting RBAC and ABAC for OS1 platform.",
+        "Developed a scalable webhook notifications service.",
+        "Led development of messaging service enabling SMS, Email, and WhatsApp notifications using APIs and Kafka consumers.",
+        "Worked on Node.js, Scylla, Postgres, Kafka, Golang, Express.js, Java, TypeScript, Keycloak, Docker, Kubernetes.",
+        "Experience with both REST and event-driven microservices.",
+        "Owned features end-to-end from design to deployment."
+      ]
+    },
+    {
+      "role": "Software Engineer",
+      "company": "Varian - a Siemens Healthineer Company",
+      "duration": "07/2019 - 09/2021",
+      "achievements": [
+        "Core member of FHIR Interoperability team; designed and developed FHIR-based REST APIs.",
+        "Worked as backend developer using Java Dropwizard, MSSQL.",
+        "Implemented documentation automation, security auditing, and performance metrics logging.",
+        "Worked in agile environment using JIRA and Azure DevOps."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.E. (Computer Engineering)",
+      "institution": "Pune Institute of Computer Technology, Pune",
+      "duration": "08/2016 - 06/2019",
+      "cgpa": "8.99/10"
+    },
+    {
+      "degree": "Diploma in Computer Engineering",
+      "institution": "Government Polytechnic, Pune",
+      "duration": "07/2013 - 06/2016",
+      "percentage": "88.18%"
+    }
+  ],
+  "skills": [
+    "Java", "Node.js", "Go", "Microservices", "Express.js", "Spring Boot",
+    "MS SQL", "ScyllaDB", "JavaScript", "Redis", "Bootstrap", "Kafka",
+    "Keycloak", "OAuth 2.0", "AWS Cloud", "ElasticSearch", "DynamoDB", "OOP"
+  ],
+  "projects": [
+    {
+      "name": "ChatBot Engine",
+      "duration": "11/2024 - Present",
+      "description": "WhatsApp chatbot engine allowing developers to configure workflows, send messages, and act on responses.",
+      "tech_stack": ["Golang", "Kafka", "Infobip", "Redis"]
+    },
+    {
+      "name": "Devtools",
+      "duration": "05/2024 - Present",
+      "description": "Development utility APIs for day-to-day tasks like base64 encode/decode, string utilities.",
+      "tech_stack": ["Golang", "Echo Framework"]
+    },
+    {
+      "name": "Workflow Manager",
+      "duration": "08/2018 - 03/2019",
+      "description": "Generic platform allowing developers to design and execute workflows via GUI.",
+      "tech_stack": ["Java", "Spring", "MongoDB", "AngularJS", "Bootstrap"]
+    },
+    {
+      "name": "Smart City: Pune",
+      "duration": "07/2017 - 10/2017",
+      "description": "Android app connecting local people to civil administration authorities.",
+      "tech_stack": ["Java", "XML", "PHP", "MySQL"]
+    }
+  ],
+  "certifications": [
+    "Microsoft Azure Fundamentals (AZ-900)",
+    "Java Memory Management"
+  ],
+  "achievements": [
+    "Winner - OS1 Internal Hackathon (Delhivery, 2022)",
+    "Gold Medalist in I2I Project Competition - way2techin.com",
+    "Winner - Software Hackathon, Persona Fest"
+  ],
+  "interests": ["Mobile Photography", "Fitness", "Trekking"]
+}
