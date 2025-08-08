@@ -3,8 +3,15 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
+import { ExternalLink } from "lucide-react";
 
-interface Project { name: string; duration: string; description: string; tech_stack: string[] }
+interface Project { 
+  name: string; 
+  duration: string; 
+  description: string; 
+  tech_stack: string[];
+  link?: string;
+}
 
 export function ProjectsSection({ projects }: { projects: Project[] }) {
   const [open, setOpen] = useState(false);
@@ -33,8 +40,18 @@ export function ProjectsSection({ projects }: { projects: Project[] }) {
                   <Badge key={t} variant="secondary">{t}</Badge>
                 ))}
               </div>
-              <div className="pt-2">
+              <div className="pt-2 flex gap-2">
                 <Button variant="outline" onClick={() => { setSelected(p); setOpen(true); }}>View Details</Button>
+                {p.link && (
+                  <Button 
+                    variant="outline" 
+                    onClick={() => window.open(p.link, '_blank', 'noopener,noreferrer')}
+                    className="flex items-center gap-2"
+                  >
+                    Visit Project
+                    <ExternalLink className="h-4 w-4" />
+                  </Button>
+                )}
               </div>
             </CardContent>
           </Card>
@@ -53,6 +70,18 @@ export function ProjectsSection({ projects }: { projects: Project[] }) {
                 <Badge key={t} variant="secondary">{t}</Badge>
               ))}
             </div>
+            {selected?.link && (
+              <div className="pt-2">
+                <Button 
+                  variant="outline" 
+                  onClick={() => window.open(selected.link, '_blank', 'noopener,noreferrer')}
+                  className="flex items-center gap-2"
+                >
+                  Visit Project
+                  <ExternalLink className="h-4 w-4" />
+                </Button>
+              </div>
+            )}
           </div>
         </DialogContent>
       </Dialog>

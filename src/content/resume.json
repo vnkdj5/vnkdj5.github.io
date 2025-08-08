@@ -75,7 +75,8 @@
       "name": "Devtools",
       "duration": "05/2024 - Present",
       "description": "Development utility APIs for day-to-day tasks like base64 encode/decode, string utilities.",
-      "tech_stack": ["Golang", "Echo Framework"]
+      "tech_stack": ["Golang", "Echo Framework"],
+      "link": "https://vnkdj5.github.io/dev-kit-forge"
     },
     {
       "name": "Smart City: Pune",
