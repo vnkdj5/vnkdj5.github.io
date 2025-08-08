@@ -41,7 +41,7 @@ export default function Layout() {
         e.preventDefault();
         setOpen((v) => !v);
       }
-      if (e.key === "t" && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      if (e.key.toLowerCase() === "t" && e.altKey ) {
         e.preventDefault();
         setTheme(theme === "light" ? "dark" : "light");
       }
