@@ -1,6 +1,4 @@
-export const RESUME = await (async () => {
-  // Using dynamic import to allow Vite to bundle JSON
-  const data = await import("./resume.json");
-  return data.default;
-})();
+import resumeData from "./resume.json";
+
+export const RESUME = resumeData;
 export type Resume = typeof RESUME;
