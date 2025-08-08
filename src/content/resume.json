@@ -78,12 +78,6 @@
       "tech_stack": ["Golang", "Echo Framework"]
     },
     {
-      "name": "Workflow Manager",
-      "duration": "08/2018 - 03/2019",
-      "description": "Generic platform allowing developers to design and execute workflows via GUI.",
-      "tech_stack": ["Java", "Spring", "MongoDB", "AngularJS", "Bootstrap"]
-    },
-    {
       "name": "Smart City: Pune",
       "duration": "07/2017 - 10/2017",
       "description": "Android app connecting local people to civil administration authorities.",
