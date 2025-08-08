@@ -15,6 +15,13 @@ export const remoteTools: RemoteTool[] = [
     keywords: ["base64", "encode", "decode", "encoding", "string"]
   },
   {
+    id: "decimal-binary",
+    title: "Decimal ↔ Binary Converter",
+    description: "Convert decimal numbers to binary with interactive bit manipulation",
+    category: "conversion",
+    keywords: ["decimal", "binary", "convert", "bits", "toggle", "number", "base"]
+  }/* ,
+  {
     id: "json-formatter",
     title: "JSON Formatter",
     description: "Format, validate and beautify JSON data",
@@ -27,14 +34,8 @@ export const remoteTools: RemoteTool[] = [
     description: "Encode and decode URL strings and parameters",
     category: "encoding",
     keywords: ["url", "encode", "decode", "uri", "percent", "encoding"]
-  },
-  {
-    id: "decimal-binary",
-    title: "Decimal ↔ Binary Converter",
-    description: "Convert decimal numbers to binary with interactive bit manipulation",
-    category: "conversion",
-    keywords: ["decimal", "binary", "convert", "bits", "toggle", "number", "base"]
-  }/* ,
+  }, */
+  /* ,
   {
     id: "text-to-json",
     title: "Text to JSON Converter",
