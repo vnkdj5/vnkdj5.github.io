@@ -15,7 +15,7 @@ export function HeroSection({ name, title, tagline }: { name: string; title: str
   return (
     <section id="hero" className="container mx-auto py-24 text-center animate-enter">
       <p className="text-sm text-muted-foreground mb-2">{title}</p>
-      <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight font-sans">{name}</h1>
+      <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight font-sans dev-gradient">{name}</h1>
       <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">{tagline}</p>
       <div className="mt-8 flex items-center justify-center gap-3">
         <Button variant="hero" onClick={copyEmail}>Contact Me</Button>
