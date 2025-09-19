@@ -3,6 +3,7 @@ import { remoteTools } from "./remoteTools";
 import { IframeTool } from "@/components/tools/IframeTool";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import { trackExternalLink } from "@/lib/analytics";
 
 export function PlaygroundSection() {
   return (
@@ -51,7 +52,10 @@ export function PlaygroundSection() {
           <Button 
             variant="link" 
             className="p-0 h-auto text-sm"
-            onClick={() => window.open('https://vnkdj5.github.io/dev-kit-forge', '_blank', 'noopener,noreferrer')}
+            onClick={() => {
+              trackExternalLink('https://vnkdj5.github.io/dev-kit-forge', 'dev-kit-forge-platform');
+              window.open('https://vnkdj5.github.io/dev-kit-forge', '_blank', 'noopener,noreferrer');
+            }}
           >
             dev-kit-forge
             <ExternalLink className="h-3 w-3 ml-1" />

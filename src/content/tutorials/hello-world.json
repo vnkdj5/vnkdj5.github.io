@@ -1,0 +1,25 @@
+{
+  "slug": "hello-world",
+  "title": "Hello World Tutorial",
+  "description": "A simple hello world tutorial to get you started.",
+  "date": "2025-08-10",
+  "tags": ["getting-started", "hello-world"],
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "This is the first paragraph of the tutorial."
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "code": "console.log('Hello, World!');"
+    },
+    {
+      "type": "playground",
+      "tool": "IframeTool",
+      "props": {
+        "src": "https://codesandbox.io/embed/new?file=/index.js&query=module%3D%2FApp.js"
+      }
+    }
+  ]
+}

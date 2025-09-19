@@ -87,6 +87,9 @@ export default function Layout() {
               {SECTION_IDS.map((id) => (
                 <NavLink key={id} id={id} />
               ))}
+              <Link to="/tutorials" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                Tutorials
+              </Link>
             </nav>
           </div>
           <div className="flex items-center gap-2">

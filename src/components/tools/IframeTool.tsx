@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Maximize2, Minimize2 } from "lucide-react";
 import { useState } from "react";
+import { trackIframeInteraction, trackExternalLink } from "@/lib/analytics";
 
 interface IframeToolProps {
   toolId: string;
@@ -25,6 +26,7 @@ export function IframeTool({ toolId, title, description, category = "utility", k
   };
 
   const handleOpenFull = () => {
+    trackIframeInteraction(toolId, 'open_full');
     window.open(toolUrl, '_blank', 'noopener,noreferrer');
   };
 
@@ -46,7 +48,11 @@ export function IframeTool({ toolId, title, description, category = "utility", k
             <Button
               variant="outline"
               size="sm"
-              onClick={() => setIsExpanded(!isExpanded)}
+              onClick={() => {
+                const action = isExpanded ? 'collapse' : 'expand';
+                trackIframeInteraction(toolId, action);
+                setIsExpanded(!isExpanded);
+              }}
               className="flex items-center gap-1"
               aria-label={isExpanded ? `Collapse ${title}` : `Expand ${title}`}
             >
@@ -120,7 +126,10 @@ export function IframeTool({ toolId, title, description, category = "utility", k
           <Button 
             variant="link" 
             className="text-xs text-muted-foreground hover:text-primary"
-            onClick={() => window.open(fullUrl, '_blank', 'noopener,noreferrer')}
+            onClick={() => {
+              trackExternalLink(fullUrl, 'dev-kit-forge');
+              window.open(fullUrl, '_blank', 'noopener,noreferrer');
+            }}
           >
             More tools available at dev-kit-forge
             <ExternalLink className="h-3 w-3 ml-1" />
