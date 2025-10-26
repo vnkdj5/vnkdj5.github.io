@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 
-export type CommandTarget = { id: string; label: string };
+export type CommandTarget = { id: string; label: string; type?: 'section' | 'page' };
 
 export function CommandPalette({ open, onOpenChange, sections, onGo }: {
   open: boolean;
@@ -26,7 +26,14 @@ export function CommandPalette({ open, onOpenChange, sections, onGo }: {
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup heading="Sections">
-          {sections.map((s) => (
+          {sections.filter(s => s.type !== 'page').map((s) => (
+            <CommandItem key={s.id} value={s.label} onSelect={() => onGo(s.id)}>
+              {s.label}
+            </CommandItem>
+          ))}
+        </CommandGroup>
+        <CommandGroup heading="Pages">
+          {sections.filter(s => s.type === 'page').map((s) => (
             <CommandItem key={s.id} value={s.label} onSelect={() => onGo(s.id)}>
               {s.label}
             </CommandItem>

@@ -1,7 +1,13 @@
 import { Link, Outlet, useNavigate } from "react-router-dom";
-import { Github, Linkedin, Mail, TerminalSquare } from "lucide-react";
+import { Github, Linkedin, Mail, TerminalSquare, ChevronDown } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { useEffect, useMemo, useState } from "react";
 import { CommandPalette, CommandTarget } from "./CommandPalette";
 import { useTheme } from "next-themes";
@@ -24,12 +30,19 @@ export default function Layout() {
   const { setTheme, theme } = useTheme();
 
   const targets: CommandTarget[] = useMemo(
-    () => SECTION_IDS.map((id) => ({ id, label: id.charAt(0).toUpperCase() + id.slice(1) })),
+    () => [
+      ...SECTION_IDS.map((id) => ({ id, label: id.charAt(0).toUpperCase() + id.slice(1), type: 'section' as const })),
+      { id: "fitness-plan", label: "Fitness Plan", type: 'page' as const }
+    ],
     []
   );
 
   const goTo = (id: string) => {
     setOpen(false);
+    if (id === "fitness-plan") {
+      navigate("/plan/2025");
+      return;
+    }
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
@@ -87,6 +100,19 @@ export default function Layout() {
               {SECTION_IDS.map((id) => (
                 <NavLink key={id} id={id} />
               ))}
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost" size="sm" className="text-sm text-muted-foreground hover:text-foreground">
+                    Links
+                    <ChevronDown className="ml-1 h-3 w-3" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                  <DropdownMenuItem onClick={() => navigate("/plan/2025")}>
+                    Fitness Plan
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </nav>
           </div>
           <div className="flex items-center gap-2">
