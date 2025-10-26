@@ -17,13 +17,30 @@ import { useState } from "react";
 
 const FitnessPlan = () => {
   const [showTOC, setShowTOC] = useState(false);
+  const [openAccordion, setOpenAccordion] = useState<string>("");
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setShowTOC(false);
-    }
+    // Close mobile TOC if open
+    setShowTOC(false);
+    
+    // Expand the accordion section
+    setOpenAccordion(sectionId);
+    
+    // Wait a bit for the accordion to expand, then scroll
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        // Scroll to the element with offset for better visibility
+        const elementRect = element.getBoundingClientRect();
+        const absoluteElementTop = elementRect.top + window.pageYOffset;
+        const offset = 100; // Offset to account for header
+        
+        window.scrollTo({
+          top: absoluteElementTop - offset,
+          behavior: "smooth"
+        });
+      }
+    }, 150); // Small delay to allow accordion animation
   };
 
   const sections = [
@@ -64,15 +81,15 @@ const FitnessPlan = () => {
       </div>
 
       {/* Desktop Table of Contents */}
-      <div className="hidden md:block fixed left-4 top-1/2 transform -translate-y-1/2 z-10">
-        <div className="bg-background/80 backdrop-blur-sm border rounded-lg p-4 shadow-lg">
+      <div className="hidden md:block fixed left-4 top-1/2 transform -translate-y-1/2 z-50">
+        <div className="bg-background/90 backdrop-blur-sm border rounded-lg p-4 shadow-lg max-h-[80vh] overflow-y-auto">
           <h3 className="font-semibold mb-3 text-sm">Quick Navigation</h3>
           <nav className="space-y-2">
             {sections.map((section) => (
               <button
                 key={section.id}
                 onClick={() => scrollToSection(section.id)}
-                className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="block w-full text-left text-sm text-muted-foreground hover:text-foreground transition-colors p-1 rounded hover:bg-muted/50"
               >
                 {section.title}
               </button>
@@ -88,7 +105,7 @@ const FitnessPlan = () => {
         </p>
       </header>
 
-      <Accordion type="single" collapsible className="space-y-6">
+      <Accordion type="single" collapsible className="space-y-6" value={openAccordion} onValueChange={setOpenAccordion}>
         {/* Weekly Schedule Overview */}
         <AccordionItem value="schedule" id="schedule">
           <AccordionTrigger className="text-xl md:text-2xl font-bold">
